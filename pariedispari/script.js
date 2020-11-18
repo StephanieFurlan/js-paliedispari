@@ -1,4 +1,6 @@
-
+function agent() {
+   return Math.floor(Math.random() * 5) + 1;
+}
 
 var playButton = document.getElementById("play-button");
 playButton.addEventListener("click", function() {
@@ -7,7 +9,7 @@ playButton.addEventListener("click", function() {
    // take number from user
    var userNumber = parseInt(document.getElementById("number").value);
    // play random agent
-   var computerNumber = Math.floor(Math.random() * 5) + 1;
+   var computerNumber = agent();
    document.getElementById("pc").innerHTML = computerNumber;
    // sum both values
    var sum = userNumber + computerNumber;
