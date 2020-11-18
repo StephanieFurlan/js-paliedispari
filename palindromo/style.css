@@ -1,0 +1,63 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+}
+
+.main-container {
+   background-color: #414D6F;
+   height: 100vh;
+   padding: 20px;
+   color: white;
+   text-align: center;
+}
+
+h1 {
+   margin-bottom: 20px;
+
+}
+
+p {
+   margin-bottom: 20px;
+}
+
+.container {
+   width: 50%;
+   margin: 0 auto;
+   background-color: white;
+   /* height: 40vh; */
+   border-radius: 20px;
+   color: black;
+   padding: 40px;
+}
+.form-container {
+   margin-bottom: 20px;
+}
+
+#palindrome {
+   padding: 10px 20px;
+   border: 2px solid #414D6F;
+   border-radius: 20px;
+   width: 40%;
+}
+
+#check-palindrome {
+   padding: 10px 20px;
+   background-color:#414D6F;
+   border-radius: 20px;
+   color: white;
+}
+
+#answer {
+   font-size: 50px;
+   margin-bottom: 20px;
+}
+input:focus, textarea:focus, select:focus, button:focus {
+   outline: none;
+}

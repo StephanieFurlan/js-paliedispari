@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>FizzBuzz</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+   </head>
+   <body>
+      <div class="main-container">
+         <div class="container">
+            <h1>Check for palindrome</h1>
+            <label for="palindrome">First name:</label>
+            <input type="text" id="palindrome" name="palindrome">
+            <button id="check-palindrome">Push</button>
+            <div id="answer"></div>
+         </div>
+
+         <div class="container">
+            <div class="even-odd-form">
+               <input type="radio" id="even" name="even-odd" value="even">
+               <label for="even">Pari</label><br>
+               <input type="radio" id="odd" name="even-odd" value="odd">
+               <label for="odd">Dispari</label><br>
+            </div>
+            <div class="number-form">
+               <input id="number" type="number" name="number" value="" min="1" max="5">
+               <div id="answer2"></div>
+            </div>
+            <button id="play-button">Push</button>
+         </div>
+      </div>
+
+      <script src="script.js" charset="utf-8"></script>
+   </body>
+</html>
