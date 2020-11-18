@@ -1,32 +1,21 @@
 
-// functions that checks if a word is a palindrome
-function isPalindrome(word) {
-   return word.split("").reverse().join("") == word;
-}
-
-var button = document.getElementById("check-palindrome");
-button.addEventListener("click", function() {
-   // take value from input
-   var word = document.getElementById("palindrome").value.replace(/\s/g, "");
-   // check palindrome validity
-   var message = isPalindrome(word) ? " is a palindrome." : " is not a palindrome.";
-   // show answer
-   document.getElementById("answer").innerHTML = "The word " + "<b>" + word + "</b>" + message;
-})
-
 
 var playButton = document.getElementById("play-button");
 playButton.addEventListener("click", function() {
-   // take value from input
+   // take even or odd value from radio buttons
    var value = document.querySelector('input[name="even-odd"]:checked').value;
+   // take number from user
    var userNumber = parseInt(document.getElementById("number").value);
+   // play random agent
    var computerNumber = Math.floor(Math.random() * 5) + 1;
+   document.getElementById("pc").innerHTML = computerNumber;
+   // sum both values
    var sum = userNumber + computerNumber;
-
+   // check who is the winner
    if (sum % 2 == 0 && value == "even" || sum % 2 == 1 && value == "odd") {
-      console.log("Vince l'utente");
+      document.getElementById("winner").innerHTML = "YOU ARE THE WINNER!";
    } else {
-      console.log("Vince il pc");
+      document.getElementById("winner").innerHTML = "SORRY, COMPUTER WON! TRY AGAIN!";
    }
 
 

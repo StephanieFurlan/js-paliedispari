@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <title>FizzBuzz</title>
+      <title>Even Or Odd</title>
       <link rel="stylesheet" href="style.css">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
@@ -11,27 +11,35 @@
    </head>
    <body>
       <div class="main-container">
+         <h1>Even Or Odd?</h1>
          <div class="container">
-            <h1>Check for palindrome</h1>
-            <label for="palindrome">First name:</label>
-            <input type="text" id="palindrome" name="palindrome">
-            <button id="check-palindrome">Push</button>
-            <div id="answer"></div>
-         </div>
+            <div class="box">
+               <h2>Chose one option</h2>
+               <div id="even-odd">
+                  <div class="radio-btn">
+                     <input  type="radio" id="even" name="even-odd" value="even">
+                     <label for="even">Even</label>
+                  </div>
+                  <div class="radio-btn">
+                     <input type="radio" id="odd" name="even-odd" value="odd">
+                     <label for="odd">Odd</label>
+                  </div>
+               </div>
 
-         <div class="container">
-            <div class="even-odd-form">
-               <input type="radio" id="even" name="even-odd" value="even">
-               <label for="even">Pari</label><br>
-               <input type="radio" id="odd" name="even-odd" value="odd">
-               <label for="odd">Dispari</label><br>
             </div>
-            <div class="number-form">
+            <div class="box">
+               <h2>Type a number from 1 to 5</h2>
                <input id="number" type="number" name="number" value="" min="1" max="5">
-               <div id="answer2"></div>
             </div>
-            <button id="play-button">Push</button>
+            <div class="box">
+               <h2>Computer choice</h2>
+               <div id="pc">?</div>
+            </div>
          </div>
+         <button id="play-button">Play</button>
+         <div id="winner"></div>
+
+
       </div>
 
       <script src="script.js" charset="utf-8"></script>
