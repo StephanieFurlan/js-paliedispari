@@ -1,7 +1,21 @@
 
 // functions that checks if a word is a palindrome
 function isPalindrome(word) {
-   return word.split("").reverse().join("") == word;
+
+   var emptyWord = "";
+   for (var i = 0; i < word.length; i++) {
+      if (word[i] != "") {
+         emptyWord += word[i];
+      }
+   }
+
+   for (var i = 0; i < emptyWord.length; i++) {
+      if (emptyWord[i] != emptyWord[emptyWord.length - i - 1]) {
+         return false
+      }
+   }
+   return true;
+   // return word.split("").reverse().join("") == word;
 }
 
 var button = document.getElementById("check-palindrome");
